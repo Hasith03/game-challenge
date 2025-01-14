@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+
+#introduction {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#introduction .intro-image {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#introduction h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#introduction h2 {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 15px;
+}
+
+#introduction p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: white; /* White color for the paragraph */
+}
+
+#introduction ul {
+    text-align: left;
+    list-style-type: disc;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 600px;
+    color: white; /* White color for the unordered list */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#introduction ul li {
+    margin-bottom: 10px;
+}
+
+#startGameBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#startGameBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Game Section */
+#gameCanvas {
+    display: none; /* Initially hidden */
+    border: 2px solid #333;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#message {
+    position: fixed; /* Fixed at the bottom */
+    bottom: 10px; /* 10px from the bottom of the screen */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to align center */
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    width: 100%; /* Full width */
+    max-width: 800px; /* Constrain width */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    display: none;
+    border: 2px solid white;
+}
